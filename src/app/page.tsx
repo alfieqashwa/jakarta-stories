@@ -13,7 +13,7 @@ const IMAGES = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="kurt text-4xl font-black">Jakarta Stories</h1>
+      <h1 className="text-9xl font-black uppercase">Jakarta Stories</h1>
       <Button variant={"secondary"} size={"lg"} className="mt-4">
         Sample Button
       </Button>
