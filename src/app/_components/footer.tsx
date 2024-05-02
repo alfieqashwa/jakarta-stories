@@ -1,4 +1,4 @@
-import { Instagram, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import Link from "next/link"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { Separator } from "~/components/ui/separator"
@@ -14,7 +14,7 @@ export const Footer = () => (
     </div>
 
     {/* links */}
-    <nav className="flex flex-col items-center pt-20 font-medium uppercase underline">
+    <nav className="flex flex-col items-center space-y-2 pt-20 font-medium uppercase underline underline-offset-4">
       <Link href="/">home</Link>
       <Link href="/about">about</Link>
       <Link href="/contact">contact</Link>

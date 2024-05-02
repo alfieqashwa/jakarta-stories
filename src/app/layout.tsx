@@ -4,6 +4,7 @@ import { Montserrat as FontSans } from "next/font/google"
 import { cn } from "~/lib/utils"
 import "./globals.css"
 import { Footer } from "./_components/footer"
+import { Nav } from "./_components/nav"
 
 const fontSans = FontSans({
   subsets: ["latin-ext"],
@@ -31,6 +32,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        <Nav />
         {children}
         <Footer />
       </body>
