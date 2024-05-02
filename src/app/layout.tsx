@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Montserrat as FontSans } from "next/font/google"
 import { cn } from "~/lib/utils"
 import "./globals.css"
+import { Footer } from "./_components/footer"
 
 const fontSans = FontSans({
   subsets: ["latin-ext"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Footer />
       </body>
     </html>
   )
