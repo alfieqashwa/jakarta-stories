@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Drawer, DrawerContent, DrawerTrigger } from "~/components/ui/drawer"
 import { cn } from "~/lib/utils"
+import { LINK_LIST } from "../constants/link-list"
 
 export const Nav = () => {
   const [open, setOpen] = useState(false)
@@ -24,11 +25,7 @@ export const Nav = () => {
         <DrawerTrigger className="sr-only">open</DrawerTrigger>
         <DrawerContent className="bg-foreground">
           <section className="flex flex-col items-center space-y-2 py-32 text-2xl font-medium uppercase text-muted">
-            {[
-              { href: "/", title: "home" },
-              { href: "/about", title: "about" },
-              { href: "/contact", title: "contact" },
-            ].map((l, i) => (
+            {LINK_LIST.map((l, i) => (
               <Link
                 href={l.href}
                 onClick={() => setOpen(false)}

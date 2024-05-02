@@ -2,6 +2,7 @@ import { Mail } from "lucide-react"
 import Link from "next/link"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { Separator } from "~/components/ui/separator"
+import { LINK_LIST } from "../constants/link-list"
 
 export const Footer = () => (
   <footer className="">
@@ -15,9 +16,11 @@ export const Footer = () => (
 
     {/* links */}
     <nav className="flex flex-col items-center space-y-2 pt-20 font-medium uppercase underline underline-offset-4">
-      <Link href="/">home</Link>
-      <Link href="/about">about</Link>
-      <Link href="/contact">contact</Link>
+      {LINK_LIST.map((l, i) => (
+        <Link href={l.href} key={i}>
+          {l.title}
+        </Link>
+      ))}
     </nav>
     {/* company name */}
     <div className="whitespace-nowrap py-20 text-center text-3xl font-black uppercase text-zinc-500">
