@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 // import { Lexend_Deca } from "next/font/google";
 import { Lexend_Deca as FontSans } from "next/font/google"
-import "./globals.css"
 import { cn } from "~/lib/utils"
+import "./globals.css"
 
 const fontSans = FontSans({
   subsets: ["latin"],
