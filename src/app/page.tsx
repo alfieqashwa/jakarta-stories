@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "~/components/ui/button";
 
 export default function Home() {
   return (
@@ -37,6 +38,10 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div>
+        <Button variant="destructive">Click me</Button>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
