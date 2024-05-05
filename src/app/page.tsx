@@ -78,7 +78,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-end px-4">
-        {["jakarta highlights", "cultutral snippet", "family fun day"].map(
+        {["jakarta highlights", "cultural snippet", "family fun day"].map(
           (text, i) => (
             <article key={i} className="flex items-center space-x-1">
               <Clapperboard className="text-muted-foreground" />
