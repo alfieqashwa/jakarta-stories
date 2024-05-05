@@ -12,13 +12,15 @@ export default function Home() {
     <main className="min-h-[calc(100vh_-_8rem)] py-12">
       <div className="pb-4">
         <p className="flex flex-col items-center text-6xl font-black uppercase leading-10 tracking-wider sm:text-7xl sm:leading-10 lg:text-9xl">
-          <span className="text-muted-foreground/40">jakarta</span>
+          <span className="text-muted-foreground/40 lg:text-muted-foreground">
+            jakarta
+          </span>
           <span className="text-muted-foreground/90 lg:hidden">stories</span>
         </p>
       </div>
       <Hero />
       <p className="hidden flex-col items-center text-9xl font-black uppercase tracking-wider lg:flex">
-        <span className="text-muted">stories</span>
+        <span className="text-muted-foreground">stories</span>
       </p>
       <div className="px-4 pt-8">
         {["quick explore", "city snapshot", "local gems"].map((text, i) => (
