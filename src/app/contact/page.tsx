@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react"
 import { Metadata } from "next"
+import { FaInstagram } from "react-icons/fa"
 import { EMAIL } from "../constants/contact"
 
 export const metadata: Metadata = {
@@ -18,6 +19,10 @@ export default function Contact() {
         <section className="flex items-center">
           <Phone className="mr-2 size-5 lg:size-6" />
           <p>(+62) 895-4117-61183</p>
+        </section>
+        <section className="flex items-center">
+          <FaInstagram className="mr-2 size-5 lg:size-6" />
+          <p>@jakartastoriesid</p>
         </section>
       </article>
     </div>
