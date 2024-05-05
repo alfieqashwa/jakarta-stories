@@ -40,8 +40,8 @@ const MobileFooter = () => (
   </footer>
 )
 
-const SocialMedia = () => (
-  <div className="flex items-center justify-center space-x-3">
+export const SocialMedia = () => (
+  <div className="flex items-center justify-center space-x-4">
     <a href={IG} target="_blank" rel="noopener noreferrer">
       <FaInstagram className="size-5" />
     </a>

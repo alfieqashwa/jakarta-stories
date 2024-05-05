@@ -13,7 +13,7 @@ const IMAGES = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="font-black uppercase md:text-9xl">home</h1>
+      <h1 className="text-4xl font-black uppercase lg:text-6xl">home</h1>
 
       {/* <div>
         {IMAGES.map((img, i) => (
