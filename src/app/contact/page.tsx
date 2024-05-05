@@ -1,5 +1,10 @@
 import { Mail, Phone } from "lucide-react"
+import { Metadata } from "next"
 import { EMAIL } from "../constants/contact"
+
+export const metadata: Metadata = {
+  title: "Contact",
+}
 
 export default function Contact() {
   return (
