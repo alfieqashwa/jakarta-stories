@@ -3,13 +3,15 @@
 import { Clapperboard } from "lucide-react"
 import Image from "next/image"
 import { useMediaQuery } from "./hooks/use-media-query"
+import { Hero } from "~/components/hero"
 
 export default function Home() {
   const isDesktop = useMediaQuery("(min-width: 1024px)")
 
   return (
     <main className="min-h-[calc(100vh_-_8rem)] py-12">
-      <div className="px-4">
+      <Hero />
+      <div className="px-4 pt-8">
         {["quick explore", "city snapshot", "local gems"].map((text, i) => (
           <article key={i} className="flex items-center space-x-2">
             <Clapperboard />
