@@ -14,7 +14,7 @@ export const Nav = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="mx-4 mt-4 flex items-center">
+    <nav className="mx-4 my-4 flex items-center">
       <h1 className="text-2xl font-black uppercase tracking-widest">
         jakarta stories
       </h1>
