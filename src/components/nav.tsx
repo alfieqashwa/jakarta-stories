@@ -9,6 +9,7 @@ import { cn } from "~/lib/utils"
 import { LINK_LIST } from "../app/constants/link-list"
 import { useMediaQuery } from "~/app/hooks/use-media-query"
 import { SocialMedia } from "./footer"
+import { ModeToggle } from "./mode-toggle"
 
 export const Nav = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)")
@@ -66,6 +67,7 @@ const MobileNav = () => {
         <DrawerTrigger className="sr-only">open</DrawerTrigger>
         <DrawerContent className="bg-foreground">
           <section className="flex flex-col items-center space-y-2 py-32 text-2xl font-medium uppercase text-muted">
+            <ModeToggle />
             {LINK_LIST.map((l, i) => (
               <Link
                 href={l.href}

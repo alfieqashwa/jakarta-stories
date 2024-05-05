@@ -5,6 +5,7 @@ import { cn } from "~/lib/utils"
 import "./globals.css"
 import { Footer } from "~/components/footer"
 import { Nav } from "~/components/nav"
+import { ThemeProvider } from "~/components/theme-provider"
 
 const fontSans = FontSans({
   subsets: ["latin-ext"],
@@ -31,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="dark scroll-smooth">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head />
       <body
         className={cn(
@@ -39,9 +40,16 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <Nav />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Nav />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

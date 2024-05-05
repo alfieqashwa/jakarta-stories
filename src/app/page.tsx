@@ -12,7 +12,7 @@ export default function Home() {
     <main className="min-h-[calc(100vh_-_8rem)] py-12">
       <div className="pb-4">
         <p className="flex flex-col items-center text-6xl font-black uppercase leading-10 tracking-wider sm:text-7xl sm:leading-10 lg:text-9xl">
-          <span className="text-muted">jakarta</span>
+          <span className="text-muted-foreground/30">jakarta</span>
           <span className="text-muted-foreground/75 lg:hidden">stories</span>
         </p>
       </div>
