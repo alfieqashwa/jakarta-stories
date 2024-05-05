@@ -58,7 +58,9 @@ export const SocialMedia = () => (
     >
       <FaWhatsapp className="size-5" />
     </a>
-    <ModeToggle />
+    <div className="hidden lg:block">
+      <ModeToggle />
+    </div>
   </div>
 )
 
