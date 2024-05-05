@@ -24,8 +24,8 @@ export default function Home() {
       </p>
       <div className="px-4 pt-8">
         {["quick explore", "city snapshot", "local gems"].map((text, i) => (
-          <article key={i} className="flex items-center space-x-2">
-            <Clapperboard />
+          <article key={i} className="flex items-center space-x-1">
+            <Clapperboard className="text-muted-foreground" />
             <p className="whitespace-nowrap text-2xl font-semibold capitalize lg:text-3xl">
               {text}
             </p>
@@ -80,8 +80,8 @@ export default function Home() {
       <div className="flex flex-col items-end px-4">
         {["jakarta highlights", "cultutral snippet", "family fun day"].map(
           (text, i) => (
-            <article key={i} className="flex items-center space-x-2">
-              <Clapperboard />
+            <article key={i} className="flex items-center space-x-1">
+              <Clapperboard className="text-muted-foreground" />
               <p className="whitespace-nowrap text-2xl font-semibold capitalize lg:text-3xl">
                 {text}
               </p>
@@ -134,8 +134,8 @@ export default function Home() {
       )}
       <div className="flex flex-col items-center px-4">
         {["gulinary delight", "night out"].map((text, i) => (
-          <article key={i} className="flex items-center space-x-2">
-            <Clapperboard />
+          <article key={i} className="flex items-center space-x-1">
+            <Clapperboard className="text-muted-foreground" />
             <p className="whitespace-nowrap text-2xl font-semibold capitalize lg:text-3xl">
               {text}
             </p>
