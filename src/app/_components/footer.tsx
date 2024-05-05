@@ -2,6 +2,7 @@ import { Mail } from "lucide-react"
 import Link from "next/link"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { Separator } from "~/components/ui/separator"
+import { EMAIL, IG, PHONE } from "../constants/contact"
 import { LINK_LIST } from "../constants/link-list"
 
 export const Footer = () => (
@@ -9,9 +10,19 @@ export const Footer = () => (
     <Separator className="bg-muted-foreground pt-0.5" />
     {/* socmed icons */}
     <div className="flex items-center justify-center space-x-3 pt-20">
-      <FaInstagram className="size-5" />
-      <Mail className="size-5" />
-      <FaWhatsapp className="size-5" />
+      <a href={IG} target="_blank" rel="noopener noreferrer">
+        <FaInstagram className="size-5" />
+      </a>
+      <a href={`mailto:${EMAIL}`}>
+        <Mail className="size-5" />
+      </a>
+      <a
+        href={`https://wa.me/${PHONE}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaWhatsapp className="size-5" />
+      </a>
     </div>
 
     {/* links */}
