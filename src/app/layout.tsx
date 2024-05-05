@@ -14,7 +14,14 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "Jakarta Stories",
+  title: {
+    template: "%s | Jkt Stories",
+    default: "Jakarta Stories",
+  },
+  robots: {
+    follow: true,
+    index: true,
+  },
   description: "Jakarta Stories Description",
 }
 
