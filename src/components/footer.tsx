@@ -12,7 +12,7 @@ export function Footer() {
   const isDesktop = useMediaQuery("(min-width: 768px)")
   return (
     <section>
-      <Separator className="bg-muted-foreground pt-0.5" />
+      <Separator className="-px-10 bg-muted-foreground pt-0.5" />
       {isDesktop ? <DesktopFooter /> : <MobileFooter />}
     </section>
   )
