@@ -2,13 +2,14 @@
 
 import { Mail } from "lucide-react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { useMediaQuery } from "~/app/hooks/use-media-query"
 import { Separator } from "~/components/ui/separator"
+import { cn } from "~/lib/utils"
 import { EMAIL, IG, PHONE } from "../app/constants/contact"
 import { LINK_LIST } from "../app/constants/link-list"
-import { usePathname } from "next/navigation"
-import { cn } from "~/lib/utils"
+import { ModeToggle } from "./mode-toggle"
 
 export function Footer() {
   const isDesktop = useMediaQuery("(min-width: 768px)")
@@ -57,6 +58,7 @@ export const SocialMedia = () => (
     >
       <FaWhatsapp className="size-5" />
     </a>
+    <ModeToggle />
   </div>
 )
 

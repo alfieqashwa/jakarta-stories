@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 // import { Lexend_Deca } from "next/font/google";
 import { Montserrat as FontSans } from "next/font/google"
-import { cn } from "~/lib/utils"
-import "./globals.css"
 import { Footer } from "~/components/footer"
 import { Nav } from "~/components/nav"
 import { ThemeProvider } from "~/components/theme-provider"
+import { cn } from "~/lib/utils"
+import "./globals.css"
 
 const fontSans = FontSans({
   subsets: ["latin-ext"],
@@ -36,7 +36,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "container min-h-screen min-w-[360px] bg-background font-sans antialiased",
+          "mx-auto min-h-screen min-w-[360px] max-w-[2048px] bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
@@ -47,7 +47,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Nav />
-          {children}
+          <main className="container">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

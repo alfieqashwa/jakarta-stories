@@ -4,10 +4,10 @@ import { Spiral as Hamburger } from "hamburger-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
+import { useMediaQuery } from "~/app/hooks/use-media-query"
 import { Drawer, DrawerContent, DrawerTrigger } from "~/components/ui/drawer"
 import { cn } from "~/lib/utils"
 import { LINK_LIST } from "../app/constants/link-list"
-import { useMediaQuery } from "~/app/hooks/use-media-query"
 import { SocialMedia } from "./footer"
 import { ModeToggle } from "./mode-toggle"
 
@@ -25,7 +25,7 @@ const DesktopNav = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="my-4 flex items-center justify-between sm:my-8">
+    <nav className="mx-8 my-4 flex items-center justify-between sm:my-8">
       <section className="flex items-center space-x-4 font-semibold uppercase">
         {LINK_LIST.map((l, i) => (
           <Link
