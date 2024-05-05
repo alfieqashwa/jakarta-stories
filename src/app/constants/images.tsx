@@ -6,6 +6,5 @@ export const IMAGES = [
   { src: "/images/25.png" },
   { src: "/images/26.png" },
   { src: "/images/27.png" },
-  { src: "/images/28.png" },
   { src: "/images/29.png" },
 ] as const
