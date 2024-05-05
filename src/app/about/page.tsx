@@ -4,13 +4,13 @@ export default function About() {
   return (
     <div className="flex min-h-[calc(100vh_-_8rem)] flex-col items-center py-12">
       <h2 className="text-5xl font-bold capitalize lg:text-6xl">about</h2>
-      <div className="p-4 sm:p-8">
+      <div className="pt-4 sm:pt-8">
         <Image
           src="/images/25.png"
           alt="profile pic"
           width={600}
           height={600}
-          className="rounded-sm object-bottom"
+          className="object-bottom sm:rounded-sm"
         />
         <p className="pt-1.5 text-center text-xl font-black uppercase tracking-widest md:pt-3 md:text-2xl lg:text-4xl">
           Abdullah
