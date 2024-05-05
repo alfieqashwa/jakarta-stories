@@ -3,7 +3,7 @@ import { EMAIL } from "../constants/contact"
 
 export default function Contact() {
   return (
-    <div className="flex min-h-[calc(100vh_-_8rem)] flex-col items-center bg-zinc-800 pt-12">
+    <div className="flex min-h-[calc(100vh_-_8rem)] flex-col items-center pt-12">
       <h2 className="text-5xl font-bold capitalize lg:text-6xl">contact</h2>
       <article className="flex flex-col items-center py-16 text-lg font-medium lg:space-y-2 lg:text-xl">
         <section className="flex items-center">
