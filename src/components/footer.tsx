@@ -69,7 +69,7 @@ const MenuLink = () => (
 )
 
 const CompanyTitle = () => (
-  <div className="whitespace-nowrap text-center text-3xl font-black uppercase text-zinc-500 sm:text-4xl md:text-5xl lg:text-6xl">
+  <div className="whitespace-nowrap text-center text-3xl font-black uppercase text-zinc-500 sm:text-4xl lg:text-6xl">
     <h2>Jakarta Stories</h2>
   </div>
 )

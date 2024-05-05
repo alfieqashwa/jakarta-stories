@@ -12,8 +12,8 @@ const IMAGES = [
 ] as const
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-black uppercase lg:text-6xl">home</h1>
+    <main className="flex min-h-[calc(100vh_-_8rem)] flex-col items-center justify-between pt-12">
+      <h1 className="text-4xl font-bold capitalize lg:text-6xl">home</h1>
 
       {/* <div>
         {IMAGES.map((img, i) => (
