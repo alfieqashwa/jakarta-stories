@@ -7,6 +7,8 @@ import { useMediaQuery } from "~/app/hooks/use-media-query"
 import { Separator } from "~/components/ui/separator"
 import { EMAIL, IG, PHONE } from "../app/constants/contact"
 import { LINK_LIST } from "../app/constants/link-list"
+import { usePathname } from "next/navigation"
+import { cn } from "~/lib/utils"
 
 export function Footer() {
   const isDesktop = useMediaQuery("(min-width: 768px)")
@@ -58,15 +60,25 @@ export const SocialMedia = () => (
   </div>
 )
 
-const MenuLink = () => (
-  <nav className="flex flex-col items-center space-y-4 text-sm font-medium uppercase underline underline-offset-4">
-    {LINK_LIST.map((l, i) => (
-      <Link href={l.href} key={i}>
-        {l.title}
-      </Link>
-    ))}
-  </nav>
-)
+const MenuLink = () => {
+  const pathname = usePathname()
+  return (
+    <nav className="flex flex-col items-center space-y-4">
+      {LINK_LIST.map((l, i) => (
+        <Link
+          href={l.href}
+          className={cn(
+            "text-sm font-medium uppercase",
+            pathname === l.href && "underline underline-offset-4",
+          )}
+          key={i}
+        >
+          {l.title}
+        </Link>
+      ))}
+    </nav>
+  )
+}
 
 const CompanyTitle = () => (
   <div className="whitespace-nowrap text-center text-3xl font-black uppercase text-zinc-500 sm:text-4xl lg:text-6xl">
