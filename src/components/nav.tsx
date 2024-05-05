@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Drawer, DrawerContent, DrawerTrigger } from "~/components/ui/drawer"
 import { cn } from "~/lib/utils"
-import { LINK_LIST } from "../constants/link-list"
+import { LINK_LIST } from "../app/constants/link-list"
 
 export const Nav = () => {
   const [open, setOpen] = useState(false)

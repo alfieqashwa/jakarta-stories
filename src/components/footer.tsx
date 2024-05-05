@@ -2,8 +2,8 @@ import { Mail } from "lucide-react"
 import Link from "next/link"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { Separator } from "~/components/ui/separator"
-import { EMAIL, IG, PHONE } from "../constants/contact"
-import { LINK_LIST } from "../constants/link-list"
+import { EMAIL, IG, PHONE } from "../app/constants/contact"
+import { LINK_LIST } from "../app/constants/link-list"
 
 export const Footer = () => (
   <footer className="">
