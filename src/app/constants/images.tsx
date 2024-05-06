@@ -1,4 +1,3 @@
-import image21 from "~/images/21.png"
 import image22 from "~/images/22.png"
 import image23 from "~/images/23.png"
 import image24 from "~/images/24.png"
@@ -7,19 +6,9 @@ import image26 from "~/images/26.png"
 import image27 from "~/images/27.png"
 import image29 from "~/images/29.png"
 
-export {
-  image21,
-  image22,
-  image23,
-  image24,
-  image25,
-  image26,
-  image27,
-  image29,
-}
+export { image22, image23, image24, image25, image26, image27, image29 }
 
 export const IMAGES = [
-  { src: image21 },
   { src: image22 },
   { src: image23 },
   { src: image24 },
