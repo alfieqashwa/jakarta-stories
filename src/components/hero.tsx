@@ -35,6 +35,7 @@ export function Hero() {
                     alt="content-image"
                     width={1200}
                     height={1200}
+                    placeholder="blur"
                     className="rounded-md"
                   />
                 </CardContent>

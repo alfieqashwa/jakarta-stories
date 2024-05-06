@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import abdullah from "~/images/25.png"
+import { image25 } from "../constants/images"
 
 export const metadata: Metadata = {
   title: "About",
@@ -12,7 +12,7 @@ export default function About() {
       <h2 className="text-5xl font-bold capitalize lg:text-6xl">about</h2>
       <div className="pt-4 sm:pt-8">
         <Image
-          src={abdullah}
+          src={image25}
           alt="abdullah"
           placeholder="blur"
           className="object-bottom sm:rounded-sm"

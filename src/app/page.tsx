@@ -4,6 +4,7 @@ import { Clapperboard } from "lucide-react"
 import Image from "next/image"
 import { useMediaQuery } from "./hooks/use-media-query"
 import { Hero } from "~/components/hero"
+import { image22, image23, image24, image26, image27 } from "./constants/images"
 
 export default function Home() {
   const isDesktop = useMediaQuery("(min-width: 1024px)")
@@ -36,41 +37,46 @@ export default function Home() {
         {isDesktop ? (
           <div className="flex flex-row justify-center gap-6 py-12">
             <Image
-              src="/images/22.png"
+              src={image22}
               alt="content"
               width={300}
               height={300}
+              placeholder="blur"
               className="object-cover"
             />
             <Image
-              src="/images/24.png"
+              src={image24}
               alt="content"
               width={400}
               height={400}
+              placeholder="blur"
               className="object-cover"
             />
             <Image
-              src="/images/22.png"
+              src={image22}
               alt="content"
               width={300}
               height={300}
+              placeholder="blur"
               className="object-cover"
             />
           </div>
         ) : (
           <div className="flex flex-col items-center gap-12 py-4">
             <Image
-              src="/images/22.png"
+              src={image22}
               alt="content"
               width={600}
               height={300}
+              placeholder="blur"
               className="object-cover"
             />
             <Image
-              src="/images/24.png"
+              src={image24}
               alt="content"
               width={600}
               height={600}
+              placeholder="blur"
               className="object-cover"
             />
           </div>
@@ -93,41 +99,46 @@ export default function Home() {
       {isDesktop ? (
         <div className="flex items-center justify-center gap-6 py-12">
           <Image
-            src="/images/23.png"
+            src={image23}
             alt="content"
             width={300}
             height={300}
+            placeholder="blur"
             className="object-cover"
           />
           <Image
-            src="/images/27.png"
+            src={image27}
             alt="content"
             width={400}
             height={400}
+            placeholder="blur"
             className="object-cover"
           />
           <Image
-            src="/images/26.png"
+            src={image26}
             alt="content"
             width={300}
             height={300}
+            placeholder="blur"
             className="object-cover"
           />
         </div>
       ) : (
         <div className="flex flex-col items-center gap-12 py-4">
           <Image
-            src="/images/27.png"
+            src={image27}
             alt="content"
             width={600}
             height={600}
+            placeholder="blur"
             className="object-cover"
           />
           <Image
-            src="/images/26.png"
+            src={image26}
             alt="content"
             width={600}
             height={600}
+            placeholder="blur"
             className="object-cover"
           />
         </div>
@@ -142,22 +153,6 @@ export default function Home() {
           </article>
         ))}
       </div>
-      {/* <div className="space-y-12 py-8">
-        <Image
-          src="/images/23.png"
-          alt="content"
-          width={600}
-          height={600}
-          className="object-cover"
-        />
-        <Image
-          src="/images/29.png"
-          alt="content"
-          width={600}
-          height={600}
-          className="object-cover"
-        />
-      </div> */}
     </main>
   )
 }
