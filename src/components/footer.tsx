@@ -10,6 +10,7 @@ import { cn } from "~/lib/utils"
 import { EMAIL, IG, PHONE } from "../app/constants/contact"
 import { LINK_LIST } from "../app/constants/link-list"
 import { ModeToggle } from "./mode-toggle"
+import { Copyright } from "./copyright"
 
 export function Footer() {
   const isDesktop = useMediaQuery("(min-width: 768px)")
@@ -17,6 +18,7 @@ export function Footer() {
     <section>
       <Separator className="-px-10 bg-muted-foreground pt-0.5" />
       {isDesktop ? <DesktopFooter /> : <MobileFooter />}
+      <Copyright />
     </section>
   )
 }
