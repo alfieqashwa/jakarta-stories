@@ -42,7 +42,7 @@ const DesktopNav = () => {
           </Link>
         ))}
       </section>
-      <h1 className="-ml-32 text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl lg:text-4xl">
+      <h1 className="-ml-20 text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl lg:text-4xl">
         jakarta stories
       </h1>
       <SocialMedia />

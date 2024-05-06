@@ -23,7 +23,7 @@ export default function Home() {
       <p className="hidden flex-col items-center text-9xl font-black uppercase tracking-wider lg:flex">
         <span className="text-muted-foreground">stories</span>
       </p>
-      <div className="px-4 pt-8">
+      <div className="flex flex-col items-center px-4 pt-8 lg:items-start">
         {["quick explore", "city snapshot", "local gems"].map((text, i) => (
           <article key={i} className="flex items-center space-x-1">
             <Clapperboard className="text-muted-foreground" />
@@ -83,7 +83,7 @@ export default function Home() {
         )}
       </div>
 
-      <div className="flex flex-col items-end px-4">
+      <div className="flex flex-col items-center px-4 lg:items-end">
         {["jakarta highlights", "cultural snippet", "family fun day"].map(
           (text, i) => (
             <article key={i} className="flex items-center space-x-1">
