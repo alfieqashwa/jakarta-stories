@@ -22,7 +22,7 @@ export function Footer() {
 }
 
 const DesktopFooter = () => (
-  <footer className="flex items-center justify-between px-10 py-16">
+  <footer className="flex items-center justify-between p-16">
     {/* links */}
     <MenuLink />
     {/* company name */}
@@ -46,17 +46,17 @@ const MobileFooter = () => (
 export const SocialMedia = () => (
   <div className="flex items-center justify-center space-x-4">
     <a href={IG} target="_blank" rel="noopener noreferrer">
-      <FaInstagram className="size-5" />
+      <FaInstagram className="size-6 text-muted-foreground transition-colors duration-300 ease-in-out hover:text-foreground" />
     </a>
     <a href={`mailto:${EMAIL}`}>
-      <Mail className="size-5" />
+      <Mail className="size-6 text-muted-foreground transition-colors duration-300 ease-in-out hover:text-foreground" />
     </a>
     <a
       href={`https://wa.me/${PHONE}`}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaWhatsapp className="size-5" />
+      <FaWhatsapp className="size-6 text-muted-foreground transition-colors duration-300 ease-in-out hover:text-foreground" />
     </a>
     <div className="hidden lg:block">
       <ModeToggle />
@@ -72,8 +72,9 @@ const MenuLink = () => {
         <Link
           href={l.href}
           className={cn(
-            "text-sm font-medium uppercase",
-            pathname === l.href && "underline underline-offset-4",
+            "text-sm font-semibold uppercase text-muted-foreground",
+            pathname === l.href &&
+              "text-foreground underline underline-offset-4",
           )}
           key={i}
         >
