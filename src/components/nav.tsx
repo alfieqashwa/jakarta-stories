@@ -30,7 +30,7 @@ const DesktopNav = () => {
         {LINK_LIST.map((l, i) => (
           <Link
             href={l.href}
-            onClick={() => setOpen(false)}
+            onClick={() => setOpen(!open)}
             className={cn(
               "text-muted-foreground",
               pathname === l.href &&
@@ -42,9 +42,11 @@ const DesktopNav = () => {
           </Link>
         ))}
       </section>
-      <h1 className="-ml-20 text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl lg:text-4xl">
-        jakarta stories
-      </h1>
+      <Link href="/">
+        <h1 className="-ml-20 text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl lg:text-4xl">
+          jakarta stories
+        </h1>
+      </Link>
       <SocialMedia />
     </nav>
   )
@@ -57,9 +59,11 @@ const MobileNav = () => {
 
   return (
     <nav className="m-4 flex items-center sm:m-8">
-      <h1 className="text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl">
-        jakarta stories
-      </h1>
+      <Link href="/">
+        <h1 className="text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl">
+          jakarta stories
+        </h1>
+      </Link>
       <div className={cn("absolute right-2 z-[100]")}>
         <Hamburger toggled={open} onToggle={setOpen} />
       </div>

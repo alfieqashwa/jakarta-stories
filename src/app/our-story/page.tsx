@@ -54,7 +54,7 @@ export default function OurStory() {
           forever.
         </p>
         <p>
-          Welcome to <span className="text-2xl font-bold">Jakarta Stories</span>{" "}
+          Welcome to <span className="text-xl font-bold">Jakarta Stories</span>{" "}
           - here, every moment is a story worth telling.
         </p>
       </article>
