@@ -5,8 +5,18 @@ import image25 from "~/images/25.png"
 import image26 from "~/images/26.png"
 import image27 from "~/images/27.png"
 import image29 from "~/images/29.png"
+import passion from "~/images/passion-led-us-here.avif"
 
-export { image22, image23, image24, image25, image26, image27, image29 }
+export {
+  image22,
+  image23,
+  image24,
+  image25,
+  image26,
+  image27,
+  image29,
+  passion,
+}
 
 export const IMAGES = [
   { src: image22 },
