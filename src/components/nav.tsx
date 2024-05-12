@@ -27,7 +27,7 @@ const DesktopNav = () => {
   return (
     <nav className="mx-8 my-4 flex items-center justify-between sm:my-8">
       <section className="flex items-center space-x-4 font-semibold uppercase">
-        {LINK_LIST.map((l, i) => (
+        {LINK_LIST.filter((f) => f.title !== "home").map((l, i) => (
           <Link
             href={l.href}
             onClick={() => setOpen(!open)}
@@ -43,7 +43,7 @@ const DesktopNav = () => {
         ))}
       </section>
       <Link href="/">
-        <h1 className="-ml-20 text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl lg:text-4xl">
+        <h1 className="-ml-28 text-2xl font-black uppercase tracking-widest sm:text-4xl md:text-2xl lg:text-4xl">
           jakarta stories
         </h1>
       </Link>
