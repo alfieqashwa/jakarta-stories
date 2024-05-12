@@ -5,7 +5,10 @@ export const Copyright = () => (
     <p className="whitespace-nowrap">
       © {new Date().getFullYear()} Made with{" "}
     </p>
-    <Heart className="mx-1.5 fill-rose-600 text-rose-600" size={14} />
+    <Heart
+      className="mx-1.5 animate-pulse fill-rose-600 text-rose-600"
+      size={14}
+    />
     <span>by</span>
     <a
       className="ml-1.5 whitespace-nowrap text-muted-foreground transition-colors hover:text-foreground"
